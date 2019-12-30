@@ -3,13 +3,26 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+//引入vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
+//引入Lazyload
+import { Lazyload } from 'vant';
+// options 为可选参数，无则不传
+Vue.use(Lazyload);
+//引入vuex
+import store from "./store/index.js"
+//引入element
+import Element from 'element-ui';
+Vue.use(Element);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
