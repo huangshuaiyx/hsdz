@@ -16,6 +16,12 @@ import store from "./store/index.js"
 //引入element
 import Element from 'element-ui';
 Vue.use(Element);
+//axios
+import axios from 'axios';
+import VueAxios from "vue-axios"
+Vue.use(VueAxios,axios)
+//全局
+axios.defaults.baseURL="http://127.0.0.1:3000"
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

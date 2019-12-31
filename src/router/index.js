@@ -10,11 +10,53 @@ import xiaoxi from '@/components/xiaoxi.vue'
 import wyfaling from '@/components/wyFaling.vue'
 import wenda from '@/components/wenDa.vue'
 import wode from '@/components/woDe.vue'
-
+//三级
+import lbtiao from '@/sanji/lbtiao.vue'
+import jggtiao from '@/sanji/jggtiao.vue'
+import jptiao from '@/sanji/jptiao.vue'
+import tabtiao from '@/sanji/tabtiao.vue'
+import syzxtiao from '@/sanji/syzxtiao.vue'
+import zxsjtiao from '@/sanji/zxsjtiao.vue'
+import sjxztiao from '@/sanji/sjxztiao.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/sjxztiao',
+      name: 'sjxztiao',
+      component: sjxztiao
+    },
+    {
+      path: '/zxsjtiao',
+      name: 'zxsjtiao',
+      component: zxsjtiao
+    },
+    {
+      path: '/syzxtiao',
+      name: 'syzxtiao',
+      component: syzxtiao
+    },
+    {
+      path: '/tabtiao',
+      name: 'tabtiao',
+      component: tabtiao
+    },
+    {
+      path: '/jptiao',
+      name: 'jptiao',
+      component: jptiao
+    },
+    {
+      path: '/jggtiao',
+      name: 'jggtiao',
+      component: jggtiao
+    },
+    {
+      path: '/lbtiao',
+      name: 'lbtiao',
+      component: lbtiao
+    },
     {
       path: '/base',
       name: 'base',
@@ -50,7 +92,7 @@ export default new Router({
     },
     {
       path:"/",
-      redirect:"/base/shouye"
+      redirect:"/base"
     }
   ]
 })
